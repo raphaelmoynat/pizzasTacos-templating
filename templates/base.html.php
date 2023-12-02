@@ -24,11 +24,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="tousLesTacos.php">Tacos</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="toutesLesQuiches.php">Quiches</a>
+
+                </li>
               <li class="nav-item">
-                <a class="nav-link" href="toutesLesQuiches.php">Quiches</a>
+                <a class="nav-link" href="tousLesSushis.php">Sushi</a>
               </li>
-
-
+              <li class="nav-item">
+                <a class="nav-link" href="createSushi.php">Créer Sushi</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
