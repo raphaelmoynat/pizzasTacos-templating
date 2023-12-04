@@ -12,7 +12,7 @@ if(isset($_POST['type']) &&
   //aussi ajouter une verification
   // //que les variables contiennent bien du texte
 
-  $query = $pdo->prepare("UPDATE carte SET type = :type, description = :description, poisson = :poisson WHERE id = :id");
+  $query = $pdoSushi->prepare("UPDATE carte SET type = :type, description = :description, poisson = :poisson WHERE id = :id");
 
   $query->execute([
     "type" => $type,
@@ -32,7 +32,7 @@ $id = $_GET['id'];
 
 
 
-$query = $pdo->prepare("SELECT * FROM carte WHERE id = :id");
+$query = $pdoSushi->prepare("SELECT * FROM carte WHERE id = :id");
 
 $query->execute([
   "id" => $id

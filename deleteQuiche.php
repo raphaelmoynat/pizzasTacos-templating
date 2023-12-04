@@ -5,10 +5,10 @@ if(isset($_GET['id'])){
 
   $id = $_GET['id'];
 
-  $query = $pdoSushi->prepare("DELETE FROM carte WHERE id = :id");
+  $query = $pdoPlats->prepare("DELETE FROM quiche WHERE id = :id");
   $query->execute([
     "id"=>$id
   ]);
 
-  header('Location: tousLesSushis.php');
+  header('Location: toutesLesQuiches.php');
 }

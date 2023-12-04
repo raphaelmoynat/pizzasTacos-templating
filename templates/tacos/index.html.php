@@ -8,10 +8,9 @@
       <div class='card-body'>
         <h5 class='card-title'><?= $taco['name'] ?></h5>
         <p class='card-text'><?= $taco['description'] ?></p>
-        <form action="ficheTacos.php" method="post">
-          <input type="hidden" name="tacosId" value="<?= $taco['id'] ?>">
-          <button type="submit" class="btn btn-success">voir</button>
-        </form>
+        <a href="tacos.php?id=<?= $taco['id'] ?>" class="btn btn-warning">voir</a>
+        <a href="deleteTacos.php?id=<?= $taco['id'] ?>" class="btn btn-danger">supprimer</a>
+        <a href="editTacos.php?id=<?= $taco['id'] ?>" class="btn btn-warning">edit</a>
 
       </div>
     </div>

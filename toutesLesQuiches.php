@@ -1,3 +1,9 @@
-<?php require_once "logique/logique.php";
+<?php require_once 'logique/logique.php';
+require_once "debugmode.php";
 
-afficher("quiches/quiches", ["quiches"=>$baseDonneesQuiche]);
+$query = $pdoPlats->query("SELECT * FROM quiche");
+
+$quiches = $query->fetchAll();
+
+
+afficher("quiches/index", ["quiches"=>$quiches]);

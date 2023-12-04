@@ -11,7 +11,7 @@ if(isset($_POST['type']) &&
   $poisson = $_POST['poisson'];
 
   if (isset($type) && isset($description) && isset($poisson)) {
-    $query = $pdo->prepare("INSERT INTO carte SET type = :type, description = :description, poisson = :poisson");
+    $query = $pdoSushi->prepare("INSERT INTO carte SET type = :type, description = :description, poisson = :poisson");
 
     $query->execute([
       "type" => $type,

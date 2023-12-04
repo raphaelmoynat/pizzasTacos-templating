@@ -1,4 +1,6 @@
-<div class="d-flex justify-content-center mt-3">
+
+
+<div class=" mt-3">
 
   <?php foreach ($quiches as $quiche) :?>
 
@@ -8,10 +10,9 @@
       <div class='card-body'>
         <h5 class='card-title'><?= $quiche['name'] ?></h5>
         <p class='card-text'><?= $quiche['description'] ?></p>
-        <form action="ficheQuiche.php" method="post">
-          <input type="hidden" name="quicheId" value="<?= $quiche['id'] ?>">
-          <button type="submit" class="btn btn-success">voir</button>
-        </form>
+        <a href="quiche.php?id=<?= $quiche['id'] ?>" class="btn btn-warning">voir</a>
+        <a href="deleteQuiche.php?id=<?= $quiche['id'] ?>" class="btn btn-danger">supprimer</a>
+        <a href="editQuiche.php?id=<?= $quiche['id'] ?>" class="btn btn-warning">edit</a>
 
       </div>
     </div>
